@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to KoKoa Clone</title>
+    <title>Chat - KoKoa Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -67,23 +67,32 @@
       </div>
     </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KoKoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a KoKoa Account, Long in with your email or phone number.
-      </p>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Nicolas</h1>
+      </div>
+      <div class="alt-header__column">
+        <span>
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+      </div>
     </header>
 
-    <form action="friends.html" mehtod="get" id="login-form">
-      <input
-        name="username"
-        type="text"
-        placeholder="Email or phone number"
-        required
-      />
-      <input name="password" type="password" placeholder="Password" required />
-      <input type="submit" value="Log In" />
-      <a href="#">Find KoKoa Account or Password</a>
-    </form>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesdaty, June 30, 2020</div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/0a9be7c545.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

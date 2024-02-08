@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More - KoKoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"
+          />
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <svg
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 fa-battery-full"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5H18V15H4.5v-4.5ZM3.75 18h15A2.25 2.25 0 0 0 21 15.75v-6a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 1.5 9.75v6A2.25 2.25 0 0 0 3.75 18Z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div style="height: 35px"></div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <span>
+          <a href="settings.html">
+            <span class="nav_notiNew"></span>
+            <i class="fa-solid fa-gear fa-lg"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://fastly.picsum.photos/id/788/200/200.jpg?hmac=ECykjkngzBhLGOjhU-UYPGXXjL8Ba8VPX3S_xid4T-k"
+            class="user_component__avatar user-component___avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Nicolas</h4>
+            <span>
+              <h6 class="user_component__subtitle">+82 010 - 1234 - 5678</h6>
+            </span>
+          </div>
+        </div>
+        <div class="user-component__column message-icon">
+          <i class="fa-regular fa-message fa-2x"></i>
+        </div>
+      </div>
+      <div>
+        <div class="icon-row">
+          <div class="icon-row__icon">
+            <i class="fa-regular fa-calendar"></i>
+            <span>Calendar</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fa-regular fa-face-smile"></i>
+            <span>Emoticons</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fa-solid fa-paint-roller"></i>
+            <span>Themes</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Account</span>
+          </div>
+        </div>
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-img">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kakao Story</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-img">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kakao Story</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav_notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav_notiNew"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/0a9be7c545.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

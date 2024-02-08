@@ -1,0 +1,39 @@
+.nav {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(176, 176, 176, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav_notification {
+  position: absolute;
+  left: 20px;
+  bottom: 22px;
+}
+
+.nav_notiNew {
+  position: absolute;
+  background-color: tomato;
+  display: flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.nav__list :last-child a span {
+  left: 30px;
+  bottom: 30px;
+}
